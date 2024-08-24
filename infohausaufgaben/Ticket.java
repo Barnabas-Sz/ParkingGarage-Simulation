@@ -11,7 +11,7 @@ public class Ticket {
     public Ticket(int id) {
         this.ticketId = id;
         this.isPaid = false; // first, the ticket is not paid
-        this.entryTime = System.currentTimeMillis(); // time the car entered in milliseconds
+        this.entryTime = (int) System.currentTimeMillis(); // time the car entered in milliseconds
     }
 
     // Getter for the paid status.

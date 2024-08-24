@@ -6,14 +6,12 @@ import java.util.List;
 
 // the parking garage
 public class ParkingGarage {
-    private int totalSpots;
     private int availableSpots;
     private List<Ticket> tickets;
     private double pricePerMinute = 0.05; // Price per minute for parking.
 
     // initializes the parking garage with a certain amount of spots
     public ParkingGarage(int totalSpots) {
-        this.totalSpots = totalSpots;
         this.availableSpots = totalSpots;
         this.tickets = new ArrayList<>();
     }
@@ -46,8 +44,8 @@ public class ParkingGarage {
 
     // Parking fee calculation based on time spent 
     public double calculateParkingFee(Ticket ticket) {
-        long currentTime = System.currentTimeMillis(); // Gets the current time.
-        long parkedTimeInMinutes = (currentTime - ticket.getEntryTime()) / (1000 * 60); // parked time in minutes
+        int currentTime = (int) System.currentTimeMillis(); // Gets the current time.
+        int parkedTimeInMinutes = (currentTime - ticket.getEntryTime()) / (1000 * 60); // parked time in minutes
         return parkedTimeInMinutes * pricePerMinute; // returns the fee based on time parked
     }
 
