@@ -1,4 +1,5 @@
 package infohausaufgaben;
+// This code belongs to Barnabas Szelenyi 
 
 //the entrance gate
 public class EntranceGate {

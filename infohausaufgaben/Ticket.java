@@ -1,9 +1,10 @@
 package infohausaufgaben;
+// This code belongs to Barnabas Szelenyi 
 
 // the parking ticket
 public class Ticket {
     private boolean isPaid;
-    private long entryTime;
+    private int entryTime;
     private int ticketId;
 
     // parking ticket with unique ID is created
@@ -24,7 +25,7 @@ public class Ticket {
     }
 
     // Getter for the entry time.
-    public long getEntryTime() {
+    public int getEntryTime() {
         return entryTime;
     }
 

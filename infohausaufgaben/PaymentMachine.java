@@ -1,4 +1,5 @@
 package infohausaufgaben;
+// This code belongs to Barnabas Szelenyi 
 
 // the payment machine
 public class PaymentMachine {

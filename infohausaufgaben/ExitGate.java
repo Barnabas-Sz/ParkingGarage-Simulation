@@ -1,4 +1,5 @@
 package infohausaufgaben;
+// This code belongs to Barnabas Szelenyi 
 
 // the exit gate
 public class ExitGate {
