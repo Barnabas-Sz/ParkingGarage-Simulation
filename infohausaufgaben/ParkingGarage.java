@@ -8,7 +8,7 @@ import java.util.List;
 public class ParkingGarage {
     private int availableSpots;
     private List<Ticket> tickets;
-    private double pricePerMinute = 0.05; // Price per minute for parking.
+    private double pricePerMinute = 1.50; // Price per minute for parking.
 
     // initializes the parking garage with a certain amount of spots
     public ParkingGarage(int totalSpots) {

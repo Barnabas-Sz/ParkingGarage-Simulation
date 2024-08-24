@@ -1,5 +1,6 @@
 package infohausaufgaben;
 // This code belongs to Barnabas Szelenyi 
+
 // the display that shows available spots
 public class Display {
     private ParkingGarage garage;
