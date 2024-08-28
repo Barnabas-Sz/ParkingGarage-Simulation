@@ -1,5 +1,7 @@
 import org.junit.jupiter.api.Test;
 
+import java.util.concurrent.TimeUnit;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 class ParkingGarageTest {
@@ -45,5 +47,18 @@ class ParkingGarageTest {
         ticket.pay();
         parkingGarage.exitGarage(ticket);
         assertEquals(1, parkingGarage.getAvailableSpots()); // spot available because car paid and could leave
+    }
+    @Test
+    public void testparkingfee() throws InterruptedException {
+        ParkingGarage parkingGarage = new ParkingGarage(1);
+        Ticket ticket = parkingGarage.issueTicket();
+
+        TimeUnit.MINUTES.sleep(2);
+
+        double fee = parkingGarage.calculateParkingFee(ticket);
+        assertEquals(3.0, fee);
+
+
+
     }
 }
