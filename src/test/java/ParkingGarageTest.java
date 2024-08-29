@@ -57,8 +57,5 @@ class ParkingGarageTest {
 
         double fee = parkingGarage.calculateParkingFee(ticket);
         assertEquals(3.0, fee);
-
-
-
     }
 }
