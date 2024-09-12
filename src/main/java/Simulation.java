@@ -39,11 +39,11 @@ public class Simulation {
         }
 
         // cars pay and exit
-        for (Ticket ticket : tickets) {
+        tickets.forEach(ticket -> {
             System.out.println("\n--- Car with Ticket ID: " + ticket.getTicketId() + " is paying and exiting ---");
             paymentMachine.pay(ticket);
             exitGate.exit(ticket);
             display.showAvailableSpots();
-        }
+        });
     }
 }
